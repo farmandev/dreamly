@@ -675,6 +675,17 @@ a:hover {
 
 }
 
+.about-text.v3 h2 span {
+    background: #222;
+    padding: 45px 25px;
+    border-top-right-radius: 48%;
+    border-bottom-right-radius: 48%;
+    border-top-left-radius: 44px;
+    border-bottom-left-radius: 46px;
+
+
+}
+
 .about-text p {
     font-size: 20px;
     line-height: 50px;
@@ -925,5 +936,62 @@ a:hover {
     font-weight: 500;
     margin: 0 0 30px;
 }
-.news-item-wrap{
-    margin:  0 0 100px;
+
+.news-item-wrap {
+    margin: 0 0 100px;
+}
+
+
+/*-----------------------------
+        About Page CSS
+------------------------------*/
+.about-us {
+    background: #F9F9F9;
+    padding: 100px 0;
+    position: relative;
+}
+
+.about-content {
+    margin: 0 0 80px;
+    position: relative;
+}
+
+.shape-one {
+    position: absolute;
+    top: -13%;
+    left: -24%;
+    max-width: 32%;
+}
+
+.about-content h2 {
+    font-size: 35px;
+    line-height: 45px;
+    font-family: "Futura Bold";
+    font-weight: 300;
+    margin: 0 0 50px 0;
+
+}
+
+.about-content h2 span {
+    font-size: 44px;
+    line-height: 60px;
+    font-family: "Futura Bold";
+    position: relative;
+    margin: 0 150px 0 0;
+}
+
+.about-content h2 span:after {
+    position: absolute;
+    top: 35px;
+    left: calc(100% + 15px);
+    content: "";
+    background-color: #707070;
+    width: 100px;
+    height: 2px;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 50px;
+    max-width: 80%;
+}
