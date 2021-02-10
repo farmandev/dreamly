@@ -493,6 +493,7 @@ a:hover {
     padding: 0 12px;
     position: relative;
 }
+
 .main-menu .nav-item {
     display: inline-block;
     padding: 0 0 0 24px;
@@ -607,19 +608,22 @@ a:hover {
     margin: 120px auto 0;
     position: relative;
 }
-.hero-img{
+
+.hero-img {
     width: 100%;
     position: relative;
 }
-.hero-content{
+
+.hero-content {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 100%;
     text-align: center;
 }
-.hero-content h1{
+
+.hero-content h1 {
     font-size: 50px;
     line-height: 94px;
     margin: 0 0 30px;
@@ -627,7 +631,8 @@ a:hover {
     font-family: "Yogothic Bold";
     font-weight: 500;
 }
-.hero-content p{
+
+.hero-content p {
     font-size: 20px;
     line-height: 67px;
     margin: 0;
@@ -896,3 +901,29 @@ a:hover {
     line-height: 1;
     margin: 0;
 }
+
+/*-----------------------------
+        News Page CSS
+------------------------------*/
+.content-wrap {
+    margin: 120px 0 0;
+}
+
+.news-date {
+    font-size: 20px;
+    color: #fff;
+    display: inline-block;
+    line-height: 1;
+    background: #222;
+    margin: 0;
+    padding: 30px 25px;
+    border-top-left-radius: 34px;
+    border-bottom-left-radius: 35px;
+    border-top-right-radius: 65%;
+    border-bottom-right-radius: 64%;
+    font-family: "Futura Bold";
+    font-weight: 500;
+    margin: 0 0 30px;
+}
+.news-item-wrap{
+    margin:  0 0 100px;
