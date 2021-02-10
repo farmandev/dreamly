@@ -10,7 +10,7 @@
 }
 
 @font-face {
-    font-family: "Yogothib";
+    font-family: "Yogothic Bold";
     src: url(../fonts/yugothib.ttf);
 }
 
@@ -43,6 +43,7 @@ input[type="submit"] {
 a {
     color: #1c223a;
     text-transform: inherit;
+    text-decoration: none;
 }
 
 a:hover,
@@ -73,7 +74,7 @@ h6 {
 
 body {
     color: #000000;
-    font-weight: 300;
+    font-weight: 400;
     font-family: "Yogothic Regular";
     overflow-x: hidden !important;
 }
@@ -348,26 +349,46 @@ a:hover {
 /*return-to-top START CSS*/
 
 .back-to-top {
-    font-size: 24px;
-    width: 45px;
-    height: 45px;
-    line-height: 42px;
-    text-align: center;
-    color: #4DE2C1;
     display: none;
     position: fixed;
-    bottom: 30px;
-    right: 20px;
+    bottom: 120px;
+    right: 0px;
     z-index: 999;
-    border-radius: 50%;
-    background: #13171d;
 }
 
-
-.back-to-top i {
-    color: #fff;
+.back-to-top span {
+    display: inline-block;
+    font-family: "NatoSans Regular";
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transform: rotate(-90deg);
+    position: relative;
+    padding-right: 78px;
 }
 
+.back-to-top span::before {
+    position: absolute;
+    top: 26px;
+    left: 0;
+    content: "";
+    background: #707070;
+    width: 185px;
+    height: 2px;
+    transform: translateY(-50%);
+}
+
+.back-to-top span::after {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    content: "";
+    background: #707070;
+    width: 20px;
+    height: 2px;
+    transform: rotate(28deg);
+}
 
 .btn:focus {
     outline: none;
@@ -376,22 +397,30 @@ a:hover {
 }
 
 .btn.v1 {
-    color: #fff !important;
-    background: #32AD79;
-    font-size: 13px !important;
-    text-transform: uppercase !important;
-    line-height: 18px !important;
-    border: 1px solid transparent;
-    border-radius: 50px;
-    padding: 10px 24px !important;
-    font-weight: 500 !important;
+    font-size: 28px;
+    line-height: 47px;
+    border: 1px solid #222222;
+    border-radius: 25px;
+    padding: 20px 50px;
     transition: 0.3s;
+    color: #222;
+    font-family: "Yogothic Bold";
+    font-weight: 500;
+}
+
+.btn.v1 img {
+    margin: 0 0 0 20px;
+    max-width: 30px;
 }
 
 .btn.v1:hover {
-    color: #32AD79 !important;
-    background: #fff;
-    border: 1px solid #32AD79;
+    color: #fff;
+    background: #222;
+    border-color: transparent;
+}
+
+.btn.v1:hover img {
+    filter: brightness(0) invert(1);
 }
 
 .btn.v2 {
@@ -411,6 +440,10 @@ a:hover {
     background: #32AD79;
 }
 
+.section-padding {
+    padding: 100px 0;
+}
+
 /*--------------------------------
        Header CSS
 ---------------------------------*/
@@ -421,8 +454,9 @@ a:hover {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 15px 0;
+    padding: 30px 0;
     z-index: 999;
+    background-color: #fff;
     transition: 0.3s;
 }
 
@@ -434,6 +468,7 @@ a:hover {
     -moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, .1);
     box-shadow: 0 8px 20px 0 rgba(0, 0, 0, .1);
     background: #fff;
+    padding: 15px 0;
 }
 
 
@@ -456,6 +491,11 @@ a:hover {
 .main-menu .nav-item {
     display: inline-block;
     padding: 0 12px;
+    position: relative;
+}
+.main-menu .nav-item {
+    display: inline-block;
+    padding: 0 0 0 24px;
     position: relative;
 }
 
@@ -572,22 +612,43 @@ a:hover {
         Hero CSS
 --------------------------------*/
 .hero-wrap {
-    margin: 100px 0 0;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #ddd;
-    height: 800px;
-    max-width: 80%;
+    margin: 120px auto 0;
+    position: relative;
+    padding: 0 15px;
 }
-
+.hero-img{
+    width: 100%;
+    position: relative;
+}
+.hero-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+}
+.hero-content h1{
+    font-size: 50px;
+    line-height: 94px;
+    margin: 0 0 30px;
+    text-align: center;
+    font-family: "Yogothic Bold";
+    font-weight: 500;
+}
+.hero-content p{
+    font-size: 20px;
+    line-height: 67px;
+    margin: 0;
+}
 
 /*---------------------------------
         About CSS
 --------------------------------*/
-.about-item-wrap{
-    padding: 80px 0
+.about-item-wrap {
+    padding: 100px 0
 }
+
 .about-text h2 {
     font-size: 50px;
     line-height: 67px;
@@ -621,7 +682,14 @@ a:hover {
 .about-text p {
     font-size: 20px;
     line-height: 50px;
-    margin: 30px 0 0;
+    margin: 40px 0 55px;
+}
+
+.about-btn {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 0;
 }
 
 .link {
@@ -657,11 +725,13 @@ a:hover {
 
 .about-slider-item {
     position: relative;
-    padding: 0 5px 5px;
+    padding: 0 5px 0;
+    margin: 0 0 65px;
 }
+
 .about-slider-item:before {
     position: absolute;
-    top:7px;
+    top: 5px;
     left: 0;
     content: "";
     background: rgba(167, 167, 167, 0.19);
@@ -669,6 +739,7 @@ a:hover {
     height: 100%;
     z-index: -1;
 }
+
 .about-slider-item img {
     width: 100%;
 }
@@ -680,4 +751,157 @@ a:hover {
     line-height: 34px;
     margin: 0;
     padding: 17px;
+}
+
+
+.slick-dots {
+    margin: 30px 0;
+}
+
+.slick-dots li button {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #707070;
+    border-radius: 50%;
+    background: #F9F9F9;
+}
+
+.slick-dots li button:before {
+    display: none;
+}
+
+.slick-dots li {
+    margin: 0 17px;
+}
+
+.slick-dots li.slick-active button {
+    background: #A7A7A7;
+    border-color: #A7A7A7;
+}
+
+/*---------------------------------
+        News CSS
+--------------------------------*/
+.news-wrap {
+    padding: 100px 0;
+}
+
+.section-title h2 {
+    font-size: 50px;
+    line-height: 67px;
+    font-family: "Futura Bold";
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0 0 60px;
+}
+
+.section-title h3 {
+    font-size: 50px;
+    line-height: 67px;
+    font-family: "Yogothic Bold";
+    text-align: center;
+    font-weight: 500;
+    margin: 0 0 60px;
+}
+
+.news-item-wrap a {
+    display: block;
+}
+
+.news-item a p,
+.news-item a span.date {
+    display: inline-block;
+}
+
+
+.news-item-wrap a {
+    display: block;
+    padding: 22px 0;
+    font-size: 20px;
+    line-height: 36px;
+    border-bottom: 1px solid #ADADAD;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.news-item-wrap a:hover {
+    color: #F47D69;
+}
+
+.news-item-wrap a span {
+    padding-right: 30px;
+}
+
+.news-wrap .about-btn {
+    padding: 60px 0 0;
+}
+
+/*---------------------------------
+        Promo CSS
+--------------------------------*/
+.promo-wrap {
+    margin: 0 0 100px;
+}
+
+.promo-content img {
+    width: 90%;
+    margin: 30px auto 55px;
+    display: block;
+}
+
+/*---------------------------------
+        News CSS
+--------------------------------*/
+.footer-wrap {
+    background: #F9F9F9;
+    padding: 80px 0;
+}
+
+.footer-widget h3 {
+    font-size: 24px;
+    line-height: 34px;
+    font-family: "NatoSans Regular";
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0 0 30px;
+}
+
+.footer-widget ul li {
+    display: block;
+}
+
+.footer-widget ul li a {
+    display: inline-block;
+    font-family: "NatoSans Regular";
+    margin: 16px 0;
+    border-bottom: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.footer-widget ul li a:hover {
+    border-color: #000;
+}
+
+.footer-logo {
+    display: block;
+}
+
+.footer-widget.v1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.copyright a {
+    font-size: 20px;
+    line-height: 42px;
+    display: block;
+}
+
+.copyright p {
+    font-size: 12px;
+    line-height: 1;
+    margin: 0;
 }
