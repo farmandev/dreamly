@@ -18,120 +18,12 @@
             sticky.addClass('sticky');
         }
     });
-    /*=========================
-      OwlCarousel START
-    ===========================*/
-    $(document).ready(function() {
-        if ($(window).width() < 768) {
-            startCarousel();
-        } else {
-            $('.owl-carousel').addClass('off');
-        }
-    });
 
-    $(window).resize(function() {
-        if ($(window).width() < 768) {
-            startCarousel();
-        } else {
-            stopCarousel();
-        }
-    });
-
-    function startCarousel() {
-        $(".testimonial_slider").owlCarousel({
-            items: 1,
-            nav: false,
-            dot: true,
-            autoplayTimeout: 2000,
-            loop: false,
-            margin: 4,
-            smartSpeed: 450,
-            responsiveClass: true,
-            responsive: {
-                0: {
-                    items: 1,
-                    nav: false,
-                    dot: true
-
-                },
-                767: {
-                    items: 1,
-                    nav: false,
-                    dot: true
-
-                },
-                1000: {
-                    items: 1,
-
-                }
-            }
-        });
-         $(".press_slider").owlCarousel({
-            items: 1,
-            nav: false,
-            dot: true,
-            autoplayTimeout: 2000,
-            loop: false,
-            margin: 4,
-            smartSpeed: 450,
-            responsiveClass: true,
-            responsive: {
-                0: {
-                    items: 1,
-                    nav: false,
-                    dot: true
-
-                },
-                767: {
-                    items: 1,
-                    nav: false,
-                    dot: true
-
-                },
-                1000: {
-                    items: 1,
-
-                }
-            }
-        });
-    }
-
-    function stopCarousel() {
-        var owl = $('.owl-carousel');
-        owl.trigger('destroy.owl.carousel');
-        owl.addClass('off');
-    }
-
-    $(".showcase_slider").owlCarousel({
-        items: 3,
-        nav: true,
-        dot: false,
-        autoplayTimeout: 2000,
-        loop: false,
-        navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
-        margin: 4,
-        smartSpeed: 450,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-                nav: false,
-                dot: true
-
-            },
-            
-            768: {
-                items: 2,
-
-            },
-            1000: {
-                items: 3,
-
-            }
-        }
+    //Slider
+    $('.about-slider-v1').slick();
+   
 
 
-    });
 
 
 
@@ -154,33 +46,8 @@
         }, 1500);
     });
 
-    $('#arrow-next').on('click', function(e) {
-        e.preventDefault();
-        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top - 90 }, 500, 'linear');
-    });
 
 
-
-    // Smoot Scroll Effect
-    $('.main-menu li a').bind('click', function(event) {
-        var $anchor = $(this);
-        var headerH = '88';
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top - headerH + "px"
-        }, 1200, 'easeInSine');
-        event.preventDefault();
-    });
-
-
-    // Smoot Scroll Effect
-    $('.ofcavas-menu ul li a').bind('click', function(event) {
-        var $anchor = $(this);
-        var headerH = '88';
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top - headerH + "px"
-        }, 1200, 'easeInSine');
-        event.preventDefault();
-    });
 
 
     $('.ofcavas-menu ul li a').on('click', function(e) {
@@ -209,25 +76,7 @@
     });
 
 
-    // Smooth scrolling using jQuery easing
-    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.length) {
-                $('html, body').animate({
-                    scrollTop: (target.offset().top - 88)
-                }, 1000);
-                return false;
-            }
-        }
-    });
 
-    // Activate scrollspy to add active class to navbar items on scroll
-    $('body').scrollspy({
-        target: '#mainNav',
-        offset: 90
-    });
 
 
 

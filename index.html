@@ -10,7 +10,7 @@
     <title>Title here</title>
     <!--====== Google Fonts ======-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/png">
     <!--====== Bootstrap css ======-->
@@ -23,7 +23,8 @@
     <!--====== Owl carousel css ======-->
     <link href="assets/css/owl.carousel.css" rel="stylesheet">
     <!--====== Nice-select css ======-->
-    <link href="assets/css/nice-select.css" rel="stylesheet">
+    <link href="assets/css/slick.css" rel="stylesheet">
+    <link href="assets/css/slick-theme.css" rel="stylesheet">
     <!--====== Style css ======-->
     <link href="assets/css/style.css" rel="stylesheet">
     <!--====== Responsive css ======-->
@@ -59,7 +60,7 @@
     <div class="page_wrapper">
         <!-- Header bar area Start -->
         <div class="header-bar-area">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-3">
                         <a class="navbar-brand" href="#">
@@ -67,29 +68,18 @@
                         </a>
                     </div>
                     <div class="col-lg-9 text-right">
-                        <ul id="mainNav" class="main-menu pb-2 pb-lg-0">
+                        <ul class="main-menu">
                             <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger" href="#features_wrap">Features</a>
+                                <a class="nav-link" href="#">About </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger" href="#testimonial_wrap">TESTIMONIALS</a>
+                                <a class="nav-link" href="#">Service</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger" href="#stat_wrap">KEY STATISTICS</a>
+                                <a class="nav-link" href="#">Press</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger" href="#preass_wrap">PRESS</a></li>
-                            <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger" href="#partner_wrap">PARTNERS & INVESTORS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger" href="#team_wrap">TEAM</a></li>
-                            <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger" href="#contact_wrap"> CONTACT US </a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn v1">Download</a>
-                            </li>
+                                <a class="nav-link" href="#">Recruitment</a></li>
                         </ul>
                         <div class="hamburger-menu">
                             <span class="line-top"></span>
@@ -103,35 +93,211 @@
         <!-- Header bar area End -->
         <!-- Ofcanvas-menu -->
         <div class="ofcavas-menu">
-            <ul id="mainNav" class="navbar-nav ml-auto pb-2 pb-lg-0">
+            <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#features_wrap">FEATURES</a>
+                    <a class="nav-link" href="#">About </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#testimonial_wrap">TESTIMONIALS</a>
+                    <a class="nav-link" href="#">Service</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#stat_wrap">KEY STATISTICS</a>
+                    <a class="nav-link" href="#">Press</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#preass_wrap">PRESS</a></li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#partner_wrap">PARTNERS & INVESTORS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#team_wrap">TEAM</a></li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#contact_wrap"> CONTACT US </a>
-                </li>
-                <li>
-                    <a href="#" class="btn v1"><img src="assets/img/icon-android.png" alt="Image"></a>
-                </li>
+                    <a class="nav-link" href="#">Recruitment</a></li>
             </ul>
         </div>
         <!-- Ofcanvas-menu END-->
-        
-      
-        
+        <!-- Hero Section start -->
+        <div class="hero-wrap" style="background-image: url(assets/img/hero-bg.png);">
+            <div class="hero-content">
+                <h1>
+                    もっと「カンタン」へ。
+                </h1>
+                <p>”テクノロジーの力で無駄をなくし、もっとカンタンな社会にしたい”
+                    という想いのもと、地方のデジタル化・行政のデジタル化を進めています。</p>
+            </div>
+        </div>
+        <!-- Hero Section end -->
+        <!-- About Section start -->
+        <div class="about-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="about-text v1">
+                            <h2><span>About</span>Dreamly</h2>
+                            <p>ドリームリーは、香川に拠点を置く
+                                ITスタートアップ企業です。IT人材が少なく、
+                                テクノロジーの恩恵を受けにくい地方から、
+                                変化をもたらしていきます。
+                            </p>
+                            <a href="#" class="link">More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-slider-v1">
+                            <div class="about-slider-item">
+                                <img src="assets/img/photo-1.png" alt="Image">
+                                <p>弊社エントランス</p>
+                            </div>
+                            <div class="about-slider-item">
+                                <img src="assets/img/photo-1.png" alt="Image">
+                                <p>弊社エントランス</p>
+                            </div>
+                            <div class="about-slider-item">
+                                <img src="assets/img/photo-1.png" alt="Image">
+                                <p>弊社エントランス</p>
+                            </div>
+                            <div class="about-slider-item">
+                                <img src="assets/img/photo-1.png" alt="Image">
+                                <p>弊社エントランス</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="about-text v2">
+                            <h2><span>What</span>We do</h2>
+                            <p>「地方・行政のデジタル化に向けた自社プロダクト
+                                開発」と、「ITコンサルティング及び受託開発」の
+                                ２事業を展開しています。
+                                また、インキュベーション施設も建設中です。
+                            </p>
+                            <a href="#" class="link">More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-slider-v1">
+                            <div class="about-slider-item">
+                                <img src="assets/img/photo-1.png" alt="Image">
+                                <p>弊社エントランス</p>
+                            </div>
+                            <div class="about-slider-item">
+                                <img src="assets/img/photo-1.png" alt="Image">
+                                <p>弊社エントランス</p>
+                            </div>
+                            <div class="about-slider-item">
+                                <img src="assets/img/photo-1.png" alt="Image">
+                                <p>弊社エントランス</p>
+                            </div>
+                            <div class="about-slider-item">
+                                <img src="assets/img/photo-1.png" alt="Image">
+                                <p>弊社エントランス</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About Section end -->
+        <!-- News Section start -->
+        <div class="news-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1">
+                        <div class="section-title v1">
+                            <h2>Press</h2>
+                        </div>
+                        <div class="news-item-wrap">
+                            <a class="news-item">
+                                <span class="date">2020.10.01</span>
+                                <p class="news-title">株式会社、社員の枠組みと働き方を再定義した人事制度「WIDE」をスタート</p>
+                            </a>
+                            <a class="news-item">
+                                <span class="date">2020.10.01</span>
+                                <p class="news-title">株式会社、社員の枠組みと働き方を再定義した人事制度「WIDE」をスタート</p>
+                            </a>
+                            <a class="news-item">
+                                <span class="date">2020.10.01</span>
+                                <p class="news-title">資金調達実施</p>
+                            </a>
+                            <a class="news-item">
+                                <span class="date">2019.10.15</span>
+                                <p class="news-title">事業拡大のため、オフィス移転</p>
+                            </a>
+                            <a class="news-item">
+                                <span class="date">2019.01.11</span>
+                                <p class="news-title">株式会社Dreamly設立</p>
+                            </a>
+                        </div>
+                        <a href="#" class="link">More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- News Section end -->
+        <!-- promo Section start -->
+        <div class="promo-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1">
+                        <div class="section-title">
+                            <h3>一緒に何か面白いことしませんか？</h3>
+                        </div>
+                        <div class="promo-content">
+                            <img src="assets/img/img-1.png" alt="Image">
+                            <a href="#" class="btn v1">問い合わせはコチラから <img src="assets/img/upload.png" alt="Image"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- promo Section end -->
+        <!-- Footer section start -->
+        <footer class="footer-wrap">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="footer-widget">
+                            <a href="index.html" class="footer-logo"><img src="assets/img/logo.png" alt="Image"></a>
+                            <div class="copyright">
+                                <a href="#">利用規約／免責事項</a>
+                                <a href="#">プライバシーポリシー</a>
+                                <p>©Dreamly Inc. All Rights Reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="footer-widget">
+                            <h3>About</h3>
+                            <ul>
+                                <li><a href="#">VISION</a></li>
+                                <li><a href="#">MISSION</a></li>
+                                <li><a href="#">CEO MESSAGE</a></li>
+                                <li><a href="#">MEMBER</a></li>
+                                <li><a href="#">会社概要</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="footer-widget">
+                            <h3>Service</h3>
+                            <ul>
+                                <li><a href="#">WHAT WE DO</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="footer-widget">
+                            <h3>Press</h3>
+                          
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="footer-widget">
+                            <h3>Recruitment</h3>
+                            <ul>
+                                <li><a href="#">CORE VALUE</a></li>
+                                <li><a href="#">Dreamy’s 5 LIKE!</a></li>
+                                <li><a href="#">JOBS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer section end -->
     </div>
     <!--====== BACK TO TOP START ======-->
     <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
@@ -147,7 +313,7 @@
     <!--====== Owl carousel js ======-->
     <script src="assets/js/owl.carousel.js"></script>
     <!--======Nice-select js ======-->
-    <script src="assets/js/jquery-nice-select.js"></script>
+    <script src="assets/js/slick.min.js"></script>
     <!--====== jquery sticky js ======-->
     <script src="assets/js/jquery.sticky.js"></script>
     <!--====== Main js ======-->

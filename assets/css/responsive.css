@@ -10,11 +10,7 @@
 }
 
 @media only screen and (min-width: 992px) {
-    .main-menu {
-        display: inline-block;
-        visibility: visible;
-        opacity: 1;
-    }
+  
 }
 
 @media only screen and (max-width: 991px) {
