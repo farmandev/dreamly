@@ -390,6 +390,10 @@ a:hover {
     transform: rotate(28deg);
 }
 
+.text-right {
+    text-align: right;
+}
+
 .btn:focus {
     outline: none;
     border: none;
@@ -470,6 +474,34 @@ a:hover {
 
 .btn.v3:hover img {
     filter: brightness(1) invert(0);
+}
+
+.btn.v4 {
+    display: block;
+    font-size: 18px;
+    line-height: 47px;
+    border: 1px solid #222222;
+    border-radius: 25px;
+    padding: 15px 40px;
+    transition: 0.3s;
+    color: #222;
+    font-family: "Yogothic Bold";
+    font-weight: 500;
+}
+
+.btn.v4 img {
+    margin: 0 0 0 20px;
+    max-width: 30px;
+}
+
+.btn.v4:hover {
+    color: #fff;
+    background: #222;
+    border-color: transparent;
+}
+
+.btn.v4:hover img {
+    filter: brightness(0) invert(1);
 }
 
 .section-padding {
@@ -1325,4 +1357,147 @@ a:hover {
 
 .apply-button a.btn {
     margin: 50px 0 0;
+}
+
+
+
+/*------------------------------------
+        Recruitment Page CSS
+------------------------------------*/
+.member-info-wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 60px 0 0;
+}
+
+.member-info-wrap img {
+    width: 50%;
+}
+
+.member-info {
+    width: 40%;
+    margin-left: 3%;
+}
+
+.member-info span {
+    font-size: 27px;
+    line-height: 46px;
+    font-weight: 600;
+}
+
+.member-info h3 {
+    font-size: 46px;
+    font-family: "Futura Bold";
+    font-weight: 100;
+    line-height: 46px;
+    margin: 0 0 30px;
+}
+
+.taglist {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.taglist li {
+    margin: 0 15px 15px 0;
+}
+
+.taglist li a {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 20px;
+    background: #F9F9F9;
+    border: 1px solid #707070;
+    padding: 8px 15px;
+    border-radius: 50px;
+}
+
+.social_profile li {
+    display: inline-block;
+    margin: 0 15px 0 0;
+}
+
+.social_profile li a {
+    font-size: 40px;
+    transition: 0.3s;
+}
+
+.social_profile {
+    display: inline-block;
+    border: 1px solid #707070;
+    padding: 5px 15px;
+    border-radius: 0;
+    margin: 20px 0 0;
+    position: relative;
+}
+
+.social_profile span {
+    position: absolute;
+    top: -7px;
+    left: 2px;
+    display: inline-block;
+    background: #fff;
+    font-size: 8px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    line-height: 1;
+    color: #999;
+    text-transform: uppercase;
+    padding: 3px;
+}
+
+.social_profile a.twitter:hover i {
+    color: #4DA6E9;
+}
+
+.social_profile a.github:hover i {
+    color: #000000;
+}
+
+.social_profile a.fb:hover i {
+    color: #194484;
+}
+
+.social_profile a.linkedin:hover i {
+    color: #0073B1;
+}
+
+.member-desc h3 {
+    font-size: 45px;
+    line-height: 56px;
+    margin: 0 0 20px;
+}
+.member-desc p {
+    font-size: 20px;
+    line-height: 40px;
+    margin: 0;
+}
+
+.member-desc {
+    position: relative;
+    padding: 80px 0;
+    margin: 0 0 100px;
+}
+
+.member-desc:before {
+    position: absolute;
+    top: -110px;
+    left: 0;
+    width: 100%;
+    height: calc(100% + 80px);
+    background: #F9F9F9;
+    content: "";
+    z-index: -1;
+}
+
+.member-more-btn {
+    text-align: right;
+}
+
+.member-more-btn img {
+    padding-right: 10px;
 }

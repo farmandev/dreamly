@@ -41,6 +41,11 @@
         left: -13%;
         max-width: 22%;
     }
+
+    .member-desc::before {
+    top: -73px;
+    height: calc(100% + 860px);
+}
 }
 
 @media only screen and (max-width: 1199px) {
