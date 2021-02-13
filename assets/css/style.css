@@ -730,13 +730,13 @@ a:hover {
     transform: rotate(28deg);
 }
 
-.about-slider-item {
+.slider-item {
     position: relative;
     padding: 0 5px 0;
     margin: 0 0 65px;
 }
 
-.about-slider-item:before {
+.slider-item:before {
     position: absolute;
     top: 5px;
     left: 0;
@@ -747,11 +747,11 @@ a:hover {
     z-index: -1;
 }
 
-.about-slider-item img {
+.slider-item img {
     width: 100%;
 }
 
-.about-slider-item p {
+.slider-item p {
     background: #fff;
     text-align: center;
     font-size: 20px;
@@ -821,15 +821,16 @@ a:hover {
     display: inline-block;
 }
 
-
 .news-item-wrap a {
-    display: block;
+    display: flex;
     padding: 22px 0;
     font-size: 20px;
     line-height: 36px;
     border-bottom: 1px solid #ADADAD;
     font-weight: 600;
     transition: 0.3s;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .news-item-wrap a:hover {
@@ -837,9 +838,12 @@ a:hover {
 }
 
 .news-item-wrap a span {
-    padding-right: 30px;
+    width: 19%;
 }
-
+.news-item-wrap a p{
+    width: 77%;
+    margin: 0;
+}
 .news-wrap .about-btn {
     padding: 60px 0 0;
 }
@@ -994,4 +998,37 @@ a:hover {
     font-size: 18px;
     line-height: 50px;
     max-width: 80%;
+}
+
+/*-----------------------------------
+        Service Page CSS
+------------------------------------*/
+.service-title h2 {
+    font-size: 40px;
+    line-height: 100px;
+}
+
+.service-title h2 span {
+    font-size: 100px;
+    line-height: 120px;
+    color: #F47D69;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.service-slider-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-slider-left {
+    width: 30%;
+}
+
+.service-slider-right {
+    width: 65%;
+}
+
+.service-nav .slick-slide {
+    margin: 0 20px;
 }
