@@ -185,7 +185,7 @@ a:hover {
     height: 100%;
     border-style: solid;
     /* Spinner Color */
-    border-color: #32AD79 #32AD79 transparent;
+    border-color: #000000 #000000 transparent;
     border-radius: 50%;
     border-width: 6px;
 }
@@ -509,12 +509,9 @@ a:hover {
     font-family: "NatoSans Regular";
 }
 
-.main-menu .nav-item .nav-link.active {
-    color: #32AD79 !important;
-}
-
+.main-menu .nav-item .nav-link.active,
 .main-menu .nav-link:hover {
-    color: #32AD79 !important;
+    color: #F47D69;
 }
 
 /*Hamburger-menu START CSS*/
@@ -643,6 +640,11 @@ a:hover {
 --------------------------------*/
 .about-item-wrap {
     padding: 100px 0
+}
+
+.about-item-wrap.v2 {
+    padding: 60px 0 60px;
+    margin: 0;
 }
 
 .about-text h2 {
@@ -840,10 +842,12 @@ a:hover {
 .news-item-wrap a span {
     width: 19%;
 }
-.news-item-wrap a p{
+
+.news-item-wrap a p {
     width: 77%;
     margin: 0;
 }
+
 .news-wrap .about-btn {
     padding: 60px 0 0;
 }
@@ -951,7 +955,7 @@ a:hover {
 ------------------------------*/
 .about-us {
     background: #F9F9F9;
-    padding: 100px 0;
+    padding: 100px 0 20px;
     position: relative;
 }
 
@@ -1000,6 +1004,138 @@ a:hover {
     max-width: 80%;
 }
 
+.about-text.v3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+}
+
+.about-text.v3 img {
+    max-width: 150px;
+}
+
+.about-text.v3 h2 {
+    text-transform: uppercase;
+}
+
+.ceo-msg-wrap {
+    padding: 70px 0;
+    position: relative;
+}
+
+.ceo-msg p {
+    font-size: 20px;
+    line-height: 38px;
+    margin: 0 0 30px;
+}
+
+.ceo-sign {
+    text-align: right;
+}
+
+.ceo-sign img {
+    max-width: 300px;
+}
+
+.section-title.v4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 80px;
+}
+
+.section-title.v4 h2 {
+    margin: 0 0 0 60px;
+}
+
+
+.team-item-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.team-member {
+    width: 30%;
+    text-align: center;
+    margin: 0 0 60px;
+}
+
+.team-member img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 0 0 30px;
+}
+
+.team-member p {
+    font-size: 20px;
+    line-height: 33px;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.team-member h4 {
+    font-size: 25px;
+    font-family: "Yogothic Bold";
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 48px;
+    margin: 0;
+}
+
+
+.comp-profile-info h3 {
+    font-size: 40px;
+    line-height: 60px;
+    font-family: "yogothic Bold";
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 50px;
+}
+
+.comp-profile-info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #707070;
+}
+
+.info-title h4 {
+    font-size: 20px;
+    line-height: 44px;
+    margin: 0;
+    font-weight: 400;
+}
+
+.info-title {
+    width: 20%;
+    text-align: center;
+}
+
+.info-desc {
+    width: 75%;
+}
+
+.info-desc p {
+    font-size: 20px;
+    line-height: 44px;
+    margin: 0;
+}
+
+.info-desc ul li {
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+.info-desc span {
+    display: ;
+}
+
 /*-----------------------------------
         Service Page CSS
 ------------------------------------*/
@@ -1032,3 +1168,7 @@ a:hover {
 .service-nav .slick-slide {
     margin: 0 20px;
 }
+
+/*------------------------------------
+        About Page CSS
+------------------------------------*/
