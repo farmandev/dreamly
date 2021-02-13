@@ -1242,7 +1242,6 @@ a:hover {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 1170px;
     margin: 100px auto 0;
 }
 
@@ -1286,14 +1285,13 @@ a:hover {
     justify-content: flex-start;
     align-items: ;
     flex-wrap: wrap;
-    max-width: 1170px;
     margin: 0 auto;
 }
 
 .simple-item {
     position: relative;
     width: 31%;
-    margin: 0 1% 80px;
+    margin: 80px 1% 0px;
     background: #F9F9F9;
     padding: 60px 40px;
 }
@@ -1314,7 +1312,7 @@ a:hover {
 
 .apply-button {
     text-align: center;
-    padding: 0 0 100px;
+    margin: 0 0 50px;
 }
 
 .apply-button h2 {
