@@ -440,6 +440,38 @@ a:hover {
     background: #32AD79;
 }
 
+.btn.v3 {
+    font-size: 28px;
+    line-height: 47px;
+    border: 1px solid transparent;
+    background-color: #3B84B1;
+    border-radius: 25px;
+    padding: 18px 10px;
+    transition: 0.3s;
+    color: #fff;
+    font-family: "Futura Bold";
+    font-weight: 300;
+    width: 380px;
+    letter-spacing: 2px;
+}
+
+.btn.v3 img {
+    margin: 0 0 0 20px;
+    max-width: 30px;
+    filter: brightness(0) invert(1);
+    transition: 0.3s;
+}
+
+.btn.v3:hover {
+    color: #222;
+    background: transparent;
+    border-color: #222222;
+}
+
+.btn.v3:hover img {
+    filter: brightness(1) invert(0);
+}
+
 .section-padding {
     padding: 100px 0;
 }
@@ -1170,5 +1202,129 @@ a:hover {
 }
 
 /*------------------------------------
-        About Page CSS
+        Recruitment Page CSS
 ------------------------------------*/
+
+.recruit-hero {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #ddd;
+    height: 600px;
+    position: relative;
+}
+
+.recruit-hero-content {
+    padding: 80px 0 0;
+}
+
+.recruit-hero-content h2 {
+    font-size: 40px;
+    line-height: 80px;
+    font-family: "Futura Bold";
+    font-weight: 300;
+}
+
+.section-title.v5 h3 {
+    font-size: 40px;
+    font-family: "Futura Bold";
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 60px;
+    margin: 0 0 20px;
+}
+
+.section-title.v5 {
+    text-align: center;
+}
+
+.quality-item-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1170px;
+    margin: 100px auto 0;
+}
+
+.quality-item {
+    width: 32%;
+}
+
+.quality-item {
+    position: relative;
+    background: #F9F9F9;
+    padding: 60px 40px;
+}
+
+.quality-item span {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    color: #F2AF9A;
+    font-size: 46px;
+    line-height: 56px;
+    font-weight: "";
+    font-family: "Yogothic Bold";
+}
+
+.quality-item-wrap h4 {
+    font-size: 30px;
+    line-height: 40px;
+    font-family: "Futura Bold";
+    font-weight: 300;
+    margin: 0;
+}
+
+.quality-item-wrap h5 {
+    line-height: 45px;
+    font-size: 22px;
+    margin: 0 0 16px;
+}
+
+.simple-wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: ;
+    flex-wrap: wrap;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.simple-item {
+    position: relative;
+    width: 31%;
+    margin: 0 1% 80px;
+    background: #F9F9F9;
+    padding: 60px 40px;
+}
+
+.simple-item img.icon {
+    position: absolute;
+    top: -53px;
+    left: 0;
+}
+
+.simple-item h4 {
+    font-size: 23px;
+    line-height: 38px;
+    margin: 0 0 40px;
+    font-family: "Futura Bold";
+    font-weight: 400;
+}
+
+.apply-button {
+    text-align: center;
+    padding: 0 0 100px;
+}
+
+.apply-button h2 {
+    font-size: 50px;
+    line-height: 67px;
+    font-family: "Futura Bold";
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.apply-button a.btn {
+    margin: 50px 0 0;
+}
