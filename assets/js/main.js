@@ -19,67 +19,103 @@
         }
     });
 
-    $('.slick-slider').slick({
-        centerMode: true,
-        slidesToShow: 5,
-        dots: true,
-        arrows: true,
-        swipe: true,
-        swipeToSlide: true,
-    });
+
     //Slider
     // $('.about-slider-v1').slick();
     $('.about-slider-v1').slick({
         dots: true,
         infinite: true,
+        arrows: false,
         speed: 300,
         // slidesToShow: 1,
         // slidesToScroll: 1,
         responsive: [{
-                breakpoint: 1024,
-                settings: {
-                    // slidesToShow: 3,
-                    // slidesToScroll: 3,
-                    // infinite: true,
-                    // dots: true
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    // slidesToShow: 2,
-                    // slidesToScroll: 2
-                }
-            },
-            {
-                breakpoint: 767,
-                settings: {
-                    centerMode: true,
-                    slidesToShow: 3,
-                    dots: true,
-                    arrows: true,
-                    swipe: true,
-                    swipeToSlide: true,
-                }
+            breakpoint: 767,
+            settings: {
+                centerMode: true,
+                slidesToShow: 1,
+                dots: true,
+                arrows: true,
+                swipe: true,
+                swipeToSlide: true,
             }
-        ]
+        }]
     });
     // Service Slider
 
-    $('.service-for').slick({
+    $('.service-for-one').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         fade: true,
         asNavFor: '.service-nav'
     });
-    $('.service-nav').slick({
+    $('.service-nav-one').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.service-for',
+        dots: true,
+        centerMode: false,
+        focusOnSelect: true
+    });
+
+    $('.service-for-two').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.service-nav'
+    });
+    $('.service-nav-two').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
         asNavFor: '.service-for',
         dots: true,
         centerMode: true,
         focusOnSelect: true
+    });
+
+    $('.service-for-three').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.service-nav'
+    });
+    $('.service-nav-three').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.service-for',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true
+    });
+    $('.mobile-service-slider-one').slick({
+        centerMode: true,
+        slidesToShow: 1,
+        dots: true,
+        arrows: true,
+        swipe: true,
+        swipeToSlide: true,
+
+    });
+    $('.mobile-service-slider-two').slick({
+        centerMode: true,
+        slidesToShow: 1,
+        dots: true,
+        arrows: true,
+        swipe: true,
+        swipeToSlide: true,
+
+    });
+    $('.mobile-service-slider-three').slick({
+        centerMode: true,
+        slidesToShow: 1,
+        dots: true,
+        arrows: true,
+        swipe: true,
+        swipeToSlide: true,
+
     });
 
 
@@ -110,15 +146,7 @@
 
 
 
-    $('.ofcavas-menu ul li a').on('click', function(e) {
-        e.preventDefault();
-        $('.ofcavas-menu').removeClass('current');
-    });
-
-    $('.ofcavas-menu ul li a').on('click', function(e) {
-        e.preventDefault();
-        $('.ofcavas-menu').removeClass('current');
-    });
+    
 
 
     // Hamburger-menu
