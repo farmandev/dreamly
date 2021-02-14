@@ -58,18 +58,18 @@
         centerMode: false,
         focusOnSelect: true,
         responsive: [{
-            // breakpoint: 1920,
-            // settings: {
-            //     slidesToShow: 3,
-            //     slidesToScroll: 1,
-
-            // },
             breakpoint: 1920,
             settings: {
                 slidesToShow: 5,
                 slidesToScroll: 1,
 
-            }
+            },
+            breakpoint: 1599,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 1,
+
+            },
         }]
     });
 
@@ -88,25 +88,19 @@
         centerMode: false,
         focusOnSelect: true,
         responsive: [{
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 1008,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 800,
-                // settings: "unslick"
-            }
+            breakpoint: 1920,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 1,
 
-        ]
+            },
+            breakpoint: 1599,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 1,
+
+            },
+        }]
     });
 
     $('.service-for-three').slick({
@@ -122,7 +116,21 @@
         asNavFor: '.service-for-three',
         dots: true,
         centerMode: false,
-        focusOnSelect: true
+        focusOnSelect: true,
+        responsive: [{
+            breakpoint: 1920,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 1,
+
+            },
+            breakpoint: 1599,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 1,
+
+            },
+        }]
     });
     $('.mobile-service-slider-one').slick({
         centerMode: true,
