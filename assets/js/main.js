@@ -48,15 +48,29 @@
         slidesToScroll: 1,
         arrows: false,
         fade: true,
-        asNavFor: '.service-nav'
+        asNavFor: '.service-nav-one'
     });
     $('.service-nav-one').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
-        asNavFor: '.service-for',
+        asNavFor: '.service-for-one',
         dots: true,
         centerMode: false,
-        focusOnSelect: true
+        focusOnSelect: true,
+        responsive: [{
+            // breakpoint: 1920,
+            // settings: {
+            //     slidesToShow: 3,
+            //     slidesToScroll: 1,
+
+            // },
+            breakpoint: 1920,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 1,
+
+            }
+        }]
     });
 
     $('.service-for-two').slick({
@@ -64,15 +78,35 @@
         slidesToScroll: 1,
         arrows: false,
         fade: true,
-        asNavFor: '.service-nav'
+        asNavFor: '.service-nav-two'
     });
     $('.service-nav-two').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
-        asNavFor: '.service-for',
+        asNavFor: '.service-for-two',
         dots: true,
-        centerMode: true,
-        focusOnSelect: true
+        centerMode: false,
+        focusOnSelect: true,
+        responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 1008,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 800,
+                // settings: "unslick"
+            }
+
+        ]
     });
 
     $('.service-for-three').slick({
@@ -80,14 +114,14 @@
         slidesToScroll: 1,
         arrows: false,
         fade: true,
-        asNavFor: '.service-nav'
+        asNavFor: '.service-nav-three'
     });
     $('.service-nav-three').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
-        asNavFor: '.service-for',
+        asNavFor: '.service-for-three',
         dots: true,
-        centerMode: true,
+        centerMode: false,
         focusOnSelect: true
     });
     $('.mobile-service-slider-one').slick({
@@ -146,7 +180,7 @@
 
 
 
-    
+
 
 
     // Hamburger-menu
