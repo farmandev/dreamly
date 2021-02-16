@@ -51,27 +51,27 @@
         asNavFor: '.service-nav-one'
     });
     $('.service-nav-one').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        asNavFor: '.service-for-one',
-        dots: true,
-        centerMode: false,
-        focusOnSelect: true,
-        responsive: [{
-            breakpoint: 1920,
-            settings: {
-                slidesToShow: 5,
-                slidesToScroll: 1,
-
-            },
-            breakpoint: 1599,
-            settings: {
-                slidesToShow: 5,
-                slidesToScroll: 1,
-
-            },
-        }]
-    });
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            asNavFor: '.service-for-one',
+            dots: true,
+            centerMode: false,
+            focusOnSelect: true,
+            responsive: [{
+                // breakpoint: 1920,
+                // settings: {
+                //     slidesToShow: 3,
+                //     slidesToScroll: 1,
+    
+                // },
+                breakpoint: 1920,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+    
+                }
+            }]
+        });
 
     $('.service-for-two').slick({
         slidesToShow: 1,
@@ -80,28 +80,34 @@
         fade: true,
         asNavFor: '.service-nav-two'
     });
-    $('.service-nav-two').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        asNavFor: '.service-for-two',
-        dots: true,
-        centerMode: false,
-        focusOnSelect: true,
-        responsive: [{
-            breakpoint: 1920,
-            settings: {
-                slidesToShow: 5,
-                slidesToScroll: 1,
-
-            },
-            breakpoint: 1599,
-            settings: {
-                slidesToShow: 5,
-                slidesToScroll: 1,
-
-            },
-        }]
-    });
+   $('.service-nav-two').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            asNavFor: '.service-for-two',
+            dots: true,
+            centerMode: false,
+            focusOnSelect: true,
+            responsive: [{
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 1008,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 800,
+                    // settings: "unslick"
+                }
+    
+            ]
+        });
 
     $('.service-for-three').slick({
         slidesToShow: 1,
@@ -181,7 +187,7 @@
 
         $('html, body').animate({
             scrollTop: 0,
-        }, 1500);
+        }, 200);
     });
 
 

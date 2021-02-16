@@ -527,8 +527,11 @@ a:hover {
     z-index: 999;
     background-color: #fff;
     transition: 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
-
 
 /*sticky START CSS*/
 
@@ -537,7 +540,8 @@ a:hover {
     -moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, .1);
     box-shadow: 0 8px 20px 0 rgba(0, 0, 0, .1);
     background: #fff;
-    padding: 15px 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 
@@ -712,7 +716,7 @@ a:hover {
 }
 
 .about-item-wrap.v2 {
-    padding: 60px 0 60px;
+    padding: 110px 0 110px;
     margin: 0;
 }
 
@@ -721,22 +725,18 @@ a:hover {
     line-height: 67px;
     font-family: "Futura Bold";
     font-weight: 500;
+    position: relative;
 }
 
 .about-text h2 span {
     color: #fff;
     display: inline-block;
-    background: #3B84B1;
+    text-transform: uppercase;
     line-height: 1;
-    padding: 56px 25px;
-    border-top-right-radius: 48%;
-    border-bottom-right-radius: 48%;
-    border-top-left-radius: 44px;
-    border-bottom-left-radius: 46px;
-    margin-right: 18px;
+    margin-right: 55px;
 }
 
-.about-text.v1 h2 span {
+/*.about-text.v1 h2 span {
     background: #3B84B1;
 
 }
@@ -745,8 +745,8 @@ a:hover {
     background: #F47D69;
 
 }
-
-.about-text.v3 h2 span {
+*/
+/*.about-text.v3 h2 span {
     background: #222;
     padding: 45px 25px;
     border-top-right-radius: 48%;
@@ -755,12 +755,35 @@ a:hover {
     border-bottom-left-radius: 46px;
 
 
+}*/
+.about-text.v1.text-center.style1,
+.about-text.v2.text-center.style1 {
+    display: flex;
+    justify-content: center;
+}
+
+.about-text.v1 h2 span img,
+.about-text.v2 h2 span img {
+    position: absolute;
+    top: 53%;
+    left: -46px;
+    z-index: -1;
+    transform: translateY(-50%);
+    max-width: 260px;
+}
+
+.about-text.v3 h2 span img {
+    position: absolute;
+    top: -40px;
+    left: -35px;
+    z-index: -1;
+    min-width: 170px;
 }
 
 .about-text p {
     font-size: 20px;
     line-height: 50px;
-    margin: 40px 0 55px;
+    margin: 70px 0 55px;
 }
 
 .about-btn {
@@ -999,33 +1022,42 @@ a:hover {
 }
 
 .news-date {
-    font-size: 20px;
+    font-size: 30px;
     color: #fff;
     display: inline-block;
     line-height: 1;
-    background: #222;
+    /*background: #222;*/
     margin: 0;
-    padding: 30px 25px;
-    border-top-left-radius: 34px;
-    border-bottom-left-radius: 35px;
-    border-top-right-radius: 65%;
-    border-bottom-right-radius: 64%;
+    /*padding: 30px 25px;*/
+    /*border-top-left-radius: 34px;
+        border-bottom-left-radius: 35px;
+        border-top-right-radius: 65%;
+        border-bottom-right-radius: 64%;*/
     font-family: "Futura Bold";
     font-weight: 500;
     margin: 0 0 30px;
+    position: relative;
 }
 
 .news-item-wrap {
     margin: 0 0 100px;
 }
 
+.news-date img {
+    position: absolute;
+    top: 50%;
+    left: -35px;
+    z-index: -1;
+    transform: translateY(-50%);
+    min-width: 150px;
+}
 
 /*-----------------------------
         About Page CSS
 ------------------------------*/
 .about-us {
     background: #F9F9F9;
-    padding: 100px 0 20px;
+    padding: 130px 0 20px;
     position: relative;
 }
 
@@ -1056,6 +1088,7 @@ a:hover {
     font-family: "Futura Bold";
     position: relative;
     margin: 0 150px 0 0;
+    text-transform: uppercase;
 }
 
 .about-content h2 span:after {
@@ -1090,7 +1123,7 @@ a:hover {
 }
 
 .ceo-msg-wrap {
-    padding: 70px 0;
+    padding: 100px 0 70px 0;
     position: relative;
 }
 
@@ -1132,7 +1165,7 @@ a:hover {
 .team-member {
     width: 30%;
     text-align: center;
-    margin: 0 0 60px;
+    margin: 0 0 50px;
 }
 
 .team-member img {
@@ -1199,6 +1232,10 @@ a:hover {
     margin: 0;
 }
 
+.info-desc p span {
+    margin-left: 10px;
+}
+
 .info-desc ul li {
     display: inline-block;
     margin: 0 10px 0 0;
@@ -1246,7 +1283,7 @@ a:hover {
     color: #F47D69;
     display: inline-block;
     font-family: "Yogothic Bold";
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .service-slider-wrap {
@@ -1277,19 +1314,23 @@ a:hover {
 .service-item-img {
     width: 30%;
 }
+
 .service-item-img img {
     display: block;
     max-width: 330px;
     width: 100%;
 }
+
 .service-item-info {
     width: 50%;
     margin-left: 5%;
 }
-.service-nav .slick-slide img{
-   max-height: 200px;
-   width: 100%;
+
+.service-nav .slick-slide img {
+    max-height: 200px;
+    width: 100%;
 }
+
 .service-nav .slick-dots {
     margin: 30px 0;
     text-align: left;
@@ -1299,6 +1340,7 @@ a:hover {
 .service-nav-three .slick-dots {
     bottom: -150%;
 }
+
 .service-nav .slick-dots li:first-child {
     margin-left: 0;
 }
@@ -1313,9 +1355,11 @@ a:hover {
     font-size: 20px;
     line-height: 40px;
 }
+
 .service-nav .slider-item {
     padding-bottom: 4px;
 }
+
 /*------------------------------------
         Recruitment Page CSS
 ------------------------------------*/
@@ -1412,7 +1456,7 @@ a:hover {
 .simple-item img.icon {
     position: absolute;
     top: -53px;
-    left: 0;
+    left: 5px;
 }
 
 .simple-item h4 {
@@ -1428,6 +1472,11 @@ a:hover {
     margin: 0 0 50px;
 }
 
+.apply-button p {
+    font-size: 20px;
+    line-height: 91px;
+}
+
 .apply-button h2 {
     font-size: 50px;
     line-height: 67px;
@@ -1437,7 +1486,7 @@ a:hover {
 }
 
 .apply-button a.btn {
-    margin: 50px 0 0;
+    margin: 10px 0 0;
 }
 
 
@@ -1458,7 +1507,7 @@ a:hover {
 }
 
 .member-info {
-    width: 40%;
+    width: 45%;
     margin-left: 3%;
 }
 
