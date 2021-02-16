@@ -1277,17 +1277,25 @@ a:hover {
 .service-item-img {
     width: 30%;
 }
-
+.service-item-img img {
+    display: block;
+    max-width: 330px;
+    width: 100%;
+}
 .service-item-info {
     width: 50%;
     margin-left: 5%;
 }
-
+.service-nav .slick-slide img{
+   max-height: 200px;
+   width: 100%;
+}
 .service-nav .slick-dots {
     margin: 30px 0;
     text-align: left;
     bottom: -100%;
 }
+
 .service-nav-three .slick-dots {
     bottom: -150%;
 }
